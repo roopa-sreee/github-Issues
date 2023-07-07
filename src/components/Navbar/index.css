@@ -1,0 +1,27 @@
+/* Write your CSS here */
+.navbar {
+  background-color: antiquewhite;
+  color: grey;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.github-icon-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.github-heading {
+  color: black;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Roboto';
+}
+@media screen and (min-width: 768px) {
+  .github-heading {
+    font-size: 28px;
+  }
+}

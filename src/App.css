@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+}
+.details-container {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  flex-grow: grow;
+}
+@media screen and (min-width: 768px) {
+  .details-container {
+    flex-direction: row;
+  }
+}
+.user-id {
+  color: black;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .user-id {
+    font-size: 24px;
+    align-self: flex-start;
+  }
+}
+.options {
+  display: flex;
+  justify-content: flex-end;
+}
+.total-issues {
+  color: grey;
+  font-weight: 400;
+  font-family: 'Roboto';
+  font-size: 14px;
+  margin-right: 15px;
+}
+@media screen and (min-width: 768px) {
+  .total-issues {
+    font-size: 18px;
+  }
+}
+.issues-list {
+  list-style-type: none;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.key {
+  color: #182042;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Roboto';
+}
+.value {
+  color: #152257;
+  font-weight: 400;
+  font-family: 'Roboto';
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  .key {
+    font-size: 22px;
+  }
+  .value {
+    font-size: 22px;
+  }
+}
+.repos-visited-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.failure-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.failure-text {
+  color: black;
+  font-weight: 500;
+  font-size: 26px;
+  font-family: 'Roboto';
+}
+.retry-button {
+  color: white;
+  background-color: blue;
+  padding: 15px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
